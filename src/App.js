@@ -47,8 +47,10 @@ function App() {
       </div>
 
 
-
-
+<div className="app_stats"></div>
+  {/* InfoBoxs title=" Coronavirus cases*/}
+  {/* InfoBoxs totle= "Coronavirus recoveries" */}
+  {/* InfoBoxs */}
 
 
 
