@@ -1,15 +1,16 @@
 
 import React, { useEffect, useState } from 'react'
-import { MenuItem, FormControl, Select, } from "@material-ui/core"
+import { MenuItem, FormControl, Select, Card, CardContent } from "@material-ui/core"
 import InfoBox from './InfoBox'
+import Map from './Map'
 import './App.css';
-
 
 function App() {
   const [countries, setCountries] = useState([]);
-  const [country, setCountry] = useState('woldwide');
+  const [country, setCountry] = useState('Worldwide');
 
   // https://disease.sh/v3/covid-19/countries
+  //https://youtu.be/cF3pIMJUZxM?t=6329
 
   useEffect(() => {
     const getCountriesData = async () => {
@@ -31,11 +32,18 @@ function App() {
   const onCountryChange = async (event) => {
     const countryCode = event.target.value
     setCountry(countryCode);
+
+      const url = countryCode === 'Worldwide'
+
+    // ​https://disease.sh/v3/covid-19/all
+    // https://dosease.sh/v3/covid-19/countries/[COUNTRY_CODE]
   }
 
   return (
     <div className="app">
-      <div className="app_header">
+      <div className="app_left">
+
+         <div className="app_header">
         <h1>Aplicação Covid-19 Estrutura de Dados</h1>
         <FormControl className="app_dropdown">
           <Select variant="outlined" onChange={onCountryChange} value={country}>
@@ -66,17 +74,25 @@ function App() {
 
 
 
-      {/* Header - DONE*/}
-      {/* Title + Select input dropdown field - DONE */}
 
-      {/* InfoBoxs */}
-      {/* InfoBoxs */}
-      {/* InfoBoxs */}
-
-      {/* Table */}
-      {/* Graph */}
 
       {/* MAP */}
+       < Map />
+        
+      </div>
+
+     <Card className="app_right">
+       <CardContent>
+              <h3> Casos por Cidades </h3>
+               {/* Table */}
+               <h3> Novos casos em todo o mundo </h3>
+               {/* Graph */}
+       </CardContent>
+     
+
+
+     </Card>
+      
     </div>
   );
 }
