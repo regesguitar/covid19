@@ -1,7 +1,8 @@
 
 import React, { useEffect, useState } from 'react'
-import { MenuItem, FormControl, Select, Card, CardContent, Table } from "@material-ui/core"
+import { MenuItem, FormControl, Select, Card, CardContent } from "@material-ui/core"
 import InfoBox from './InfoBox'
+import Table from './Table'
 import Map from './Map'
 import './App.css';
 
@@ -43,7 +44,7 @@ function App() {
     const countryCode = e.target.value
    
     const url = 
-    countryCode ===  "worldwide" 
+    countryCode === "worldwide" 
     ? "https://disease.sh/v3/covid-19/all"
     : `https://disease.sh/v3/covid-19/countries/${countryCode}`
 
@@ -100,7 +101,7 @@ function App() {
       <Card className="app_right">
         <CardContent>
           <h3> Casos por Cidades </h3>
-           <Table countries={tableData}/>
+           <Table countries= {tableData} />
           <h3> Novos casos em todo o mundo </h3>
           {/* Graph */}
         </CardContent>
