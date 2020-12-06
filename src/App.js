@@ -7,6 +7,7 @@ import Map from './Map'
 import './App.css';
 import { sortData } from './utils';  
 import LineGraph from './LineGraph'
+import "leaflet/dist/leaflet.css"
 
 function App() {
   const [countries, setCountries] = useState([]);
