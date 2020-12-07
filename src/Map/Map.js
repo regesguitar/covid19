@@ -1,7 +1,7 @@
 import React from "react";
 import { MapContainer as LeafletMap, TileLayer } from "react-leaflet";
 import "./Map.css";
-import { showDataOnMap } from "./utils";
+import { showDataOnMap } from "../utils";
 
 
 function Map({ countries, casesType, center, zoom }) {
