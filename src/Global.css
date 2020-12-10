@@ -13,10 +13,10 @@ body {
 }
 
 .app_dropdown {
-  background-color: #ffffff
+  background-color: hsl(0, 0%, 100%)
 }
 .app_header > h1 {
-  color: #fc3c3c
+  color: hsl(0, 97%, 61%)
 }
 
 .app_header {
@@ -56,7 +56,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 930px) {
   .app  {
     flex-direction: column;
   }

@@ -8,26 +8,26 @@
   }
   
   .infoBox--selected {
-    border-top: 10px solid greenyellow;
+    border-top: 10px solid #adff2f;
   }
   
   .infoBox--red {
-    border-color: red;
+    border-color: hsl(0, 100%, 50%);
   }
   
   .infoBox_cases--green {
-    color: lightgreen !important;
+    color: hsl(120, 73%, 75%) !important;
   }
   
   .infoBox_cases {
-    color: #cc1034;
+    color: hsl(349, 85%, 43%);
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
   }
   
   .infoBox_total {
-    color: #6c757d;
+    color: hsl(208, 7%, 46%);
     font-weight: 700 !important;
     font-size: 0.8rem !important;
     margin-top: 15px !important;

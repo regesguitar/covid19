@@ -20,7 +20,7 @@
 .info-name {
   font-size: 20px;
   font-weight: bold;
-  color: #555;
+  color: hsl(0, 0%, 33%);
 }
 
 .info-container {

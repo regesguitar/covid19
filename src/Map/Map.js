@@ -12,8 +12,8 @@ function Map({ countries, casesType, center, zoom }) {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-         {/*  Add Circle  */}
-         {showDataOnMap(countries, casesType)}
+        {/*  Add Circle  */}
+        {showDataOnMap(countries, casesType)}
       </LeafletMap>
     </div>
   );

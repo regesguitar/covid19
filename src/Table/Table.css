@@ -1,8 +1,8 @@
 .table {
-    margin-top: 20px;
-    overflow: scroll;
+    margin-top: 18px;
     height: 400px;
-    color: #6a5d5d;
+    overflow: hidden;
+    color: hsl(0, 7%, 39%);
   }
 .table tr{
     display: flex;
@@ -13,5 +13,5 @@
 }
 
   .table tr:nth-last-of-type(odd) {
-      background-color: #f3f2f8;
+      background-color: hsl(250, 30%, 96%);
   }
